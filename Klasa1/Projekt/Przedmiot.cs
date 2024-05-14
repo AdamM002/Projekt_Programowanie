@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Projekt
 {
-    public class Class1
+    public class Przedmiot
     {
-        public int licznik;
-        public string test2;
-        public string xx;
+        protected string nazwa;
+        protected string rzadkosc;
+        protected string kolekcja;
+
+        
     }
 }
