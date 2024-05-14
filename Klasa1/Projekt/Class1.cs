@@ -9,6 +9,6 @@ namespace Projekt
     public class Class1
     {
         public int licznik;
-        public string test;
+        public string test2;
     }
 }
