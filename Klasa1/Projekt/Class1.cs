@@ -10,5 +10,6 @@ namespace Projekt
     {
         public int licznik;
         public string test2;
+        public string xx;
     }
 }
