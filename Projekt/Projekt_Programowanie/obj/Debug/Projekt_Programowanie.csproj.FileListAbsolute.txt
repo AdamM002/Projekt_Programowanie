@@ -9,3 +9,14 @@ C:\Users\verma\OneDrive\Pulpit\test\Windows_forms\Projekt_Programowanie\obj\Debu
 C:\Users\verma\OneDrive\Pulpit\test\Windows_forms\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.exe
 C:\Users\verma\OneDrive\Pulpit\test\Windows_forms\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.pdb
 C:\Users\verma\OneDrive\Pulpit\test\Windows_forms\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.Form2.resources
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\bin\Debug\Projekt_Programowanie.exe.config
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\bin\Debug\Projekt_Programowanie.exe
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\bin\Debug\Projekt_Programowanie.pdb
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.csproj.AssemblyReference.cache
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.Form1.resources
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.Form2.resources
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.Properties.Resources.resources
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.csproj.GenerateResource.cache
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.csproj.CoreCompileInputs.cache
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.exe
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.pdb

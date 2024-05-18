@@ -19,9 +19,9 @@ namespace Projekt_Programowanie
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Wyszukaj_Click(object sender, EventArgs e)
@@ -32,7 +32,6 @@ namespace Projekt_Programowanie
                 Obraz.Image = Image.FromStream(stream);
                 stream.Close();
                 textBox1.Text = "MoneyMan";
-                
             }
         }
 
@@ -52,6 +51,10 @@ namespace Projekt_Programowanie
         {
             if (Application.OpenForms.Count == 0)
                 Application.Exit();
+        }
+
+        private void Wyszukaj_opis_Click(object sender, EventArgs e)
+        {
         }
     }
 }

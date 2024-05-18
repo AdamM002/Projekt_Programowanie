@@ -1,0 +1,6 @@
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Przedmiot\bin\Debug\Przedmiot.dll
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Przedmiot\bin\Debug\Przedmiot.pdb
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Przedmiot\obj\Debug\Przedmiot.csproj.AssemblyReference.cache
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Przedmiot\obj\Debug\Przedmiot.csproj.CoreCompileInputs.cache
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Przedmiot\obj\Debug\Przedmiot.dll
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Przedmiot\obj\Debug\Przedmiot.pdb

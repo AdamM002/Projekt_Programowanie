@@ -34,6 +34,7 @@
             this.Obraz = new System.Windows.Forms.PictureBox();
             this.Wyszukiwarka_rozwijana = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Wyszukaj_opis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Obraz)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             // 
             // Wyszukaj
             // 
-            this.Wyszukaj.Location = new System.Drawing.Point(201, 55);
+            this.Wyszukaj.Location = new System.Drawing.Point(142, 56);
             this.Wyszukaj.Name = "Wyszukaj";
             this.Wyszukaj.Size = new System.Drawing.Size(75, 23);
             this.Wyszukaj.TabIndex = 3;
@@ -100,11 +101,22 @@
             this.textBox1.Size = new System.Drawing.Size(321, 20);
             this.textBox1.TabIndex = 6;
             // 
+            // Wyszukaj_opis
+            // 
+            this.Wyszukaj_opis.Location = new System.Drawing.Point(256, 56);
+            this.Wyszukaj_opis.Name = "Wyszukaj_opis";
+            this.Wyszukaj_opis.Size = new System.Drawing.Size(75, 23);
+            this.Wyszukaj_opis.TabIndex = 7;
+            this.Wyszukaj_opis.Text = "Opis";
+            this.Wyszukaj_opis.UseVisualStyleBackColor = true;
+            this.Wyszukaj_opis.Click += new System.EventHandler(this.Wyszukaj_opis_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.Wyszukaj_opis);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Wyszukiwarka_rozwijana);
             this.Controls.Add(this.Dodaj);
@@ -129,6 +141,7 @@
         private System.Windows.Forms.Button Dodaj;
         public System.Windows.Forms.ComboBox Wyszukiwarka_rozwijana;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Wyszukaj_opis;
     }
 }
 
