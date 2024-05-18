@@ -30,7 +30,7 @@ namespace Projekt_Programowanie
             if (ZmienNazwe.Text != "")
             {
                 Form1 Formularz = new Form1();
-                Formularz.Wyszukiwarka_rozwijana.Items.Add(ZmienNazwe.Text);
+                Program.Zapis(ZmienNazwe.Text);
                 string[] baza;
                 baza = Program.Odczyt();
                 for (int i = 0; i < baza.Length; i++)

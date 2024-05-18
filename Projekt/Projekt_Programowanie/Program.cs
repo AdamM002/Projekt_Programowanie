@@ -29,11 +29,22 @@ namespace Projekt_Programowanie
             {
                 baza2[i] = baza[i];
             }
+            stream.Close();
             return baza2;
         }
         //metoda zapisu do pliku
-        public static void Zapis(string[] baza)
+        public static void Zapis(string przedmiot)
         {
+            string[] baza;
+            baza = Odczyt();
+            string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
+            StreamWriter stream = new StreamWriter(parentDirectory + "\\Zapis_danych.txt");
+            for(int i = 0;i < baza.Length; i++)
+            {
+                stream.WriteLine(baza[i]);
+            }
+            stream.WriteLine(przedmiot);
+            stream.Close();
 
         }
         /// <summary>
