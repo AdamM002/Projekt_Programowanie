@@ -28,7 +28,6 @@ namespace Projekt_Programowanie
         {
             if (Wyszukiwarka_rozwijana.Text=="Mundo")
             {
-                //test
                 FileStream stream = new FileStream("C:\\Users\\verma\\OneDrive\\Pulpit\\moneyman.jpg", FileMode.Open, FileAccess.Read);
                 Obraz.Image = Image.FromStream(stream);
                 stream.Close();
