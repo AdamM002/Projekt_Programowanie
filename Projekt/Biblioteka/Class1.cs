@@ -14,15 +14,16 @@ namespace Projekt
         protected string Nazwa { get; set; }
         protected string Rzadkosc { get; set; }
         protected string Kolekcja { get; set; }
+        protected string opis;
 
 
-        protected Przedmiot(string img, string nazwa, string rzadkosc, string kolekcja)
+        protected Przedmiot(string img, string nazwa, string rzadkosc, string kolekcja, string opis)
         {
             this.img = img;
             Nazwa = nazwa;
             Rzadkosc = rzadkosc;
             Kolekcja = kolekcja;
-
+            this.opis = opis;
         }
 
 
@@ -58,7 +59,7 @@ namespace Projekt
             }
         }
 
-        public Skin(string img, string nazwa, string rzadkosc, string kolekcja, string bron, string zuzycie, double pattern) : base(img, nazwa, rzadkosc, kolekcja)
+        public Skin(string img, string nazwa, string rzadkosc, string kolekcja, string opis, string bron, string zuzycie, double pattern) : base(img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.bron = bron;
             this.zuzycie = zuzycie;
@@ -103,7 +104,7 @@ namespace Projekt
             }
         }
 
-        public Grafiti(string img, string nazwa, string rzadkosc, string kolekcja, int liczbaUzyc) : base(img, nazwa, rzadkosc, kolekcja)
+        public Grafiti(string img, string nazwa, string rzadkosc, string kolekcja, string opis, int liczbaUzyc) : base(img, nazwa, rzadkosc, kolekcja, opis)
         {
             LiczbaUzyc = liczbaUzyc;
         }
@@ -118,7 +119,7 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Naklejki(string img, string nazwa, string rzadkosc, string kolekcja, string rodzaj) : base(img, nazwa, rzadkosc, kolekcja)
+        public Naklejki(string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }
@@ -133,7 +134,7 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Żetony(string img, string nazwa, string rzadkosc, string kolekcja, string rodzaj) : base(img, nazwa, rzadkosc, kolekcja)
+        public Żetony(string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }

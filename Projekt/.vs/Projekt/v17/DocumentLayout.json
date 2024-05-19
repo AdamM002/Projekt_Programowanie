@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75712C10-7E88-4852-A0CB-715A210714D9}|Przedmiot\\Przedmiot.csproj|c:\\users\\ngojen\\documents\\github\\projekt_programowanie\\projekt\\przedmiot\\przedmioty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75712C10-7E88-4852-A0CB-715A210714D9}|Przedmiot\\Przedmiot.csproj|solutionrelative:przedmiot\\przedmioty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C6A0D5C-3B76-4454-B7B2-9E73C9486E08}|Biblioteka\\Biblioteka.csproj|c:\\users\\ngojen\\documents\\github\\projekt_programowanie\\projekt\\biblioteka\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C6A0D5C-3B76-4454-B7B2-9E73C9486E08}|Biblioteka\\Biblioteka.csproj|solutionrelative:biblioteka\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|c:\\users\\ngojen\\documents\\github\\projekt_programowanie\\projekt\\projekt_programowanie\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|solutionrelative:projekt_programowanie\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\projekt_programowanie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -18,31 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Projekt_Programowanie\\Form1.cs",
-              "RelativeDocumentMoniker": "Projekt_Programowanie\\Form1.cs",
-              "ToolTip": "C:\\Users\\verma\\OneDrive\\Pulpit\\poprawa\\Projekt\\Projekt_Programowanie\\Form1.cs [Projekt]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\verma\\OneDrive\\Pulpit\\poprawa\\Projekt\\Projekt_Programowanie\\Form1.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-05-19T13:20:44.585Z"
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Biblioteka\\Class1.cs",
+              "RelativeDocumentMoniker": "Biblioteka\\Class1.cs",
+              "ToolTip": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Biblioteka\\Class1.cs",
+              "RelativeToolTip": "Biblioteka\\Class1.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwIgAAACZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:06:18.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Przedmioty.cs",
-              "DocumentMoniker": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Przedmiot\\Przedmioty.cs",
-              "RelativeDocumentMoniker": "Przedmiot\\Przedmioty.cs",
-              "ToolTip": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Przedmiot\\Przedmioty.cs",
-              "RelativeToolTip": "Przedmiot\\Przedmioty.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Projekt_Programowanie\\Program.cs",
+              "RelativeDocumentMoniker": "Projekt_Programowanie\\Program.cs",
+              "ToolTip": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Projekt_Programowanie\\Program.cs",
+              "RelativeToolTip": "Projekt_Programowanie\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:20:44.652Z",
+              "WhenOpened": "2024-05-19T16:03:55.182Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Projekt_Programowanie\\Form1.cs",
+              "RelativeDocumentMoniker": "Projekt_Programowanie\\Form1.cs",
+              "ToolTip": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Projekt_Programowanie\\Form1.cs [Design]",
+              "RelativeToolTip": "Projekt_Programowanie\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:20:44.585Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
