@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projekt;
 
 namespace Projekt_Programowanie
 {
@@ -25,7 +26,7 @@ namespace Projekt_Programowanie
                 linia = stream.ReadLine();
             }
             string[] baza2 = new string[count];
-            for(int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++)
             {
                 baza2[i] = baza[i];
             }
@@ -39,7 +40,7 @@ namespace Projekt_Programowanie
             baza = Odczyt();
             string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
             StreamWriter stream = new StreamWriter(parentDirectory + "\\Zapis_danych.txt");
-            for(int i = 0;i < baza.Length; i++)
+            for (int i = 0; i < baza.Length; i++)
             {
                 stream.WriteLine(baza[i]);
             }
@@ -58,13 +59,13 @@ namespace Projekt_Programowanie
             var myForm = new Form1();
             string[] baza;
             baza = Odczyt();
-            for(int i = 0;i < baza.Length; i++)
+            for (int i = 0; i < baza.Length; i++)
             {
                 myForm.Wyszukiwarka_rozwijana.Items.Add(baza[i]);
             }
             myForm.Show();
             Application.Run();
-            
+
         }
     }
 }

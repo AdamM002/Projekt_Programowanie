@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Projekt;
 
 namespace Projekt_Programowanie
 {
@@ -21,12 +23,12 @@ namespace Projekt_Programowanie
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Wyszukaj_Click(object sender, EventArgs e)
         {
-            if (Wyszukiwarka_rozwijana.Text=="Mundo")
+            if (Wyszukiwarka_rozwijana.Text == "Mundo")
             {
                 FileStream stream = new FileStream("C:\\Users\\verma\\OneDrive\\Pulpit\\moneyman.jpg", FileMode.Open, FileAccess.Read);
                 Obraz.Image = Image.FromStream(stream);
@@ -55,6 +57,11 @@ namespace Projekt_Programowanie
 
         private void Wyszukaj_opis_Click(object sender, EventArgs e)
         {
+            //test
+            Bitmap bmp = new Bitmap("C:\\Users\\verma\\OneDrive\\Pulpit\\plan.png");
+            Obraz.Image = bmp;
+            string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
+            bmp.Save(parentDirectory + "\\obrazy\\test1.png", ImageFormat.Png);
         }
     }
 }

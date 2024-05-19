@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>75712c10-7e88-4852-a0cb-715a210714d9</ProjectGuid>
+    <ProjectGuid>9c6a0d5c-3b76-4454-b7b2-9e73c9486e08</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Przedmiot</RootNamespace>
-    <AssemblyName>Przedmiot</AssemblyName>
+    <RootNamespace>Biblioteka</RootNamespace>
+    <AssemblyName>Biblioteka</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

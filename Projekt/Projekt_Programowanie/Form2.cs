@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projekt;
 
 namespace Projekt_Programowanie
 {
@@ -42,7 +43,7 @@ namespace Projekt_Programowanie
             }
         }
 
-       //to zapewnia że aplikacja zamknie się po zamknięciu wszystkich okien
+        //to zapewnia że aplikacja zamknie się po zamknięciu wszystkich okien
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms.Count == 0)

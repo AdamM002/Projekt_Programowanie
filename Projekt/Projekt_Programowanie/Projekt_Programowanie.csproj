@@ -95,5 +95,11 @@
   <ItemGroup>
     <None Include="Resources\moneyman.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteka\Biblioteka.csproj">
+      <Project>{9c6a0d5c-3b76-4454-b7b2-9e73c9486e08}</Project>
+      <Name>Biblioteka</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
