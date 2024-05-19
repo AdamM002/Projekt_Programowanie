@@ -28,16 +28,16 @@ namespace Projekt_Programowanie
         //poza tym otwiera pierwsze okno i zamyka to
         private void akceptuj_Click(object sender, EventArgs e)
         {
-            if (ZmienNazwe.Text != "")
+            if (Nazwa.Text != "")
             {
                 Form1 Formularz = new Form1();
-                //Projekt.Przedmiot.Zapis(ZmienNazwe.Text);
-                //string[] baza;
-                // = Projekt.Przedmiot.Odczyt();
-                //for (int i = 0; i < baza.Length; i++)
-                //{
-                //   Formularz.Wyszukiwarka_rozwijana.Items.Add(baza[i]);
-                //}
+                string[] baza;
+                baza = Przedmiot.Odczyt();
+                for (int i = 0; i < baza.Length; i++)
+                {
+                    string[] pozycje = baza[i].Split('|');
+                    Formularz.Wyszukiwarka_rozwijana.Items.Add(pozycje[2]);
+                }
                 Formularz.Show();
                 this.Close();
             }

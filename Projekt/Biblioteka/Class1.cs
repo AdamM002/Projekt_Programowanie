@@ -15,12 +15,13 @@ namespace Projekt
         protected RodzajPrzedmiotu rodzajPrzedmiotu { set; get; }
         protected string img;
         protected string Nazwa { get; set; }
-        protected string Rzadkosc { get; set; }
+        public enum RzadkoscPrzedmiotu { konsumenckiej_jakości, wojskowej_jakości, przemysłowej_jakości, spoza_obiegu, klasy_poufne, klasy_tajne, standardowej_jakości, wyjątkowej_jakości, o_wybitnych_zdolnościach, naczelny, wysokiej_jakości, wyjątkowy_w_swojej_klasie, o_mistrzowskiej_wprawie, nadzwyczajnej_rzadkości, egzotycznego_pochodzenia, z_kontrabandy }
+        protected RzadkoscPrzedmiotu Rzadkosc { set; get; }
         protected string Kolekcja { get; set; }
         protected string opis;
 
 
-        protected Przedmiot(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis)
+        protected Przedmiot(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis)
         {
             this.rodzajPrzedmiotu = rodzajPrzedmiotu;
             this.img = img;
@@ -100,7 +101,7 @@ namespace Projekt
             }
         }
 
-        public Skin(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string bron, string zuzycie, double pattern) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Skin(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, string bron, string zuzycie, double pattern) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.bron = bron;
             this.zuzycie = zuzycie;
@@ -145,7 +146,7 @@ namespace Projekt
             }
         }
 
-        public Grafiti(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, int liczbaUzyc) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Grafiti(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, int liczbaUzyc) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             LiczbaUzyc = liczbaUzyc;
         }
@@ -160,7 +161,7 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Naklejki(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Naklejki(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }
@@ -175,7 +176,7 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Żetony(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Żetony(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }

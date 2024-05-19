@@ -28,17 +28,19 @@ namespace Projekt_Programowanie
 
         private void Wyszukaj_Click(object sender, EventArgs e)
         {
-
-            string tekst = Wyszukiwarka_rozwijana.Text;
-            int index = Wyszukiwarka_rozwijana.SelectedIndex;
-            string[] baza;
-            baza = Przedmiot.Odczyt();
-            string[] pozycje = baza[index].Split('|');
-            string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
-            FileStream stream = new FileStream(parentDirectory + pozycje[1], FileMode.Open, FileAccess.Read);
-            Obraz.Image = Image.FromStream(stream);
-            stream.Close();
-            textBox1.Text = pozycje[2];
+            if (Wyszukiwarka_rozwijana.Text != "")
+            {
+                string tekst = Wyszukiwarka_rozwijana.Text;
+                int index = Wyszukiwarka_rozwijana.SelectedIndex;
+                string[] baza;
+                baza = Przedmiot.Odczyt();
+                string[] pozycje = baza[index].Split('|');
+                string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
+                FileStream stream = new FileStream(parentDirectory + pozycje[1], FileMode.Open, FileAccess.Read);
+                Obraz.Image = Image.FromStream(stream);
+                stream.Close();
+                textBox1.Text = pozycje[2];
+            }
         }
 
         private void Dodaj_Click(object sender, EventArgs e)
