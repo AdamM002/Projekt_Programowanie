@@ -84,10 +84,6 @@
             // Wyszukiwarka_rozwijana
             // 
             this.Wyszukiwarka_rozwijana.FormattingEnabled = true;
-            this.Wyszukiwarka_rozwijana.Items.AddRange(new object[] {
-            "Test",
-            "Mundo",
-            "Meh"});
             this.Wyszukiwarka_rozwijana.Location = new System.Drawing.Point(101, 29);
             this.Wyszukiwarka_rozwijana.Name = "Wyszukiwarka_rozwijana";
             this.Wyszukiwarka_rozwijana.Size = new System.Drawing.Size(275, 21);
@@ -95,10 +91,11 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(427, 239);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(321, 20);
+            this.textBox1.Size = new System.Drawing.Size(321, 13);
             this.textBox1.TabIndex = 6;
             // 
             // Wyszukaj_opis

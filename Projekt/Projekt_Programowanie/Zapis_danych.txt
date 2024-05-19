@@ -1,4 +1,2 @@
-linia1
-linia2
-linia3
-mundo2
+Skin|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|-|-
+Skin|\\obrazy\\moneyman.jpg|mundo|rare|nie_wiem|brak|-|-

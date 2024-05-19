@@ -28,13 +28,17 @@ namespace Projekt_Programowanie
 
         private void Wyszukaj_Click(object sender, EventArgs e)
         {
-            if (Wyszukiwarka_rozwijana.Text == "Mundo")
-            {
-                FileStream stream = new FileStream("C:\\Users\\verma\\OneDrive\\Pulpit\\moneyman.jpg", FileMode.Open, FileAccess.Read);
-                Obraz.Image = Image.FromStream(stream);
-                stream.Close();
-                textBox1.Text = "MoneyMan";
-            }
+
+            string tekst = Wyszukiwarka_rozwijana.Text;
+            int index = Wyszukiwarka_rozwijana.SelectedIndex;
+            string[] baza;
+            baza = Przedmiot.Odczyt();
+            string[] pozycje = baza[index].Split('|');
+            string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
+            FileStream stream = new FileStream(parentDirectory + pozycje[1], FileMode.Open, FileAccess.Read);
+            Obraz.Image = Image.FromStream(stream);
+            stream.Close();
+            textBox1.Text = pozycje[2];
         }
 
         private void Dodaj_Click(object sender, EventArgs e)
@@ -63,5 +67,6 @@ namespace Projekt_Programowanie
             string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
             bmp.Save(parentDirectory + "\\obrazy\\test1.png", ImageFormat.Png);
         }
+
     }
 }

@@ -31,13 +31,13 @@ namespace Projekt_Programowanie
             if (ZmienNazwe.Text != "")
             {
                 Form1 Formularz = new Form1();
-                Program.Zapis(ZmienNazwe.Text);
-                string[] baza;
-                baza = Program.Odczyt();
-                for (int i = 0; i < baza.Length; i++)
-                {
-                    Formularz.Wyszukiwarka_rozwijana.Items.Add(baza[i]);
-                }
+                //Projekt.Przedmiot.Zapis(ZmienNazwe.Text);
+                //string[] baza;
+                // = Projekt.Przedmiot.Odczyt();
+                //for (int i = 0; i < baza.Length; i++)
+                //{
+                //   Formularz.Wyszukiwarka_rozwijana.Items.Add(baza[i]);
+                //}
                 Formularz.Show();
                 this.Close();
             }

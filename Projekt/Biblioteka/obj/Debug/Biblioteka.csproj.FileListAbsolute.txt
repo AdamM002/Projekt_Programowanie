@@ -4,3 +4,9 @@ C:\Users\ngojen\Documents\GitHub\Projekt_Programowanie\Projekt\Biblioteka\obj\De
 C:\Users\ngojen\Documents\GitHub\Projekt_Programowanie\Projekt\Biblioteka\obj\Debug\Biblioteka.csproj.CoreCompileInputs.cache
 C:\Users\ngojen\Documents\GitHub\Projekt_Programowanie\Projekt\Biblioteka\obj\Debug\Biblioteka.dll
 C:\Users\ngojen\Documents\GitHub\Projekt_Programowanie\Projekt\Biblioteka\obj\Debug\Biblioteka.pdb
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Biblioteka\bin\Debug\Biblioteka.dll
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Biblioteka\bin\Debug\Biblioteka.pdb
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Biblioteka\obj\Debug\Biblioteka.csproj.AssemblyReference.cache
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Biblioteka\obj\Debug\Biblioteka.csproj.CoreCompileInputs.cache
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Biblioteka\obj\Debug\Biblioteka.dll
+C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Biblioteka\obj\Debug\Biblioteka.pdb

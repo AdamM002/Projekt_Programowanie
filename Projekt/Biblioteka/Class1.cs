@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,8 @@ namespace Projekt
 
     public abstract class Przedmiot
     {
+        public enum RodzajPrzedmiotu { Skin, Grafiti, naklejki, zetony}
+        protected RodzajPrzedmiotu rodzajPrzedmiotu { set; get; }
         protected string img;
         protected string Nazwa { get; set; }
         protected string Rzadkosc { get; set; }
@@ -17,8 +20,9 @@ namespace Projekt
         protected string opis;
 
 
-        protected Przedmiot(string img, string nazwa, string rzadkosc, string kolekcja, string opis)
+        protected Przedmiot(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis)
         {
+            this.rodzajPrzedmiotu = rodzajPrzedmiotu;
             this.img = img;
             Nazwa = nazwa;
             Rzadkosc = rzadkosc;
@@ -26,12 +30,49 @@ namespace Projekt
             this.opis = opis;
         }
 
+        public virtual string ToString()
+        {
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|-", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis);
+        }
 
+        public static string[] Odczyt()
+        {
+            string[] baza = new string[500];
+            int count = 0;
+            string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
+            StreamReader stream = new StreamReader(parentDirectory + "\\Zapis_danych.txt");
+            string linia = stream.ReadLine();
+            while (linia != null)
+            {
+                baza[count] = linia;
+                count++;
+                linia = stream.ReadLine();
+            }
+            string[] baza2 = new string[count];
+            for (int i = 0; i < count; i++)
+            {
+                baza2[i] = baza[i];
+            }
+            stream.Close();
+            return baza2;
+        }
 
+        public static void Zapis(string przedmiot)
+        {
+            string[] baza;
+            baza = Odczyt();
+            string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
+            StreamWriter stream = new StreamWriter(parentDirectory + "\\Zapis_danych.txt");
+            for (int i = 0; i < baza.Length; i++)
+            {
+                stream.WriteLine(baza[i]);
+            }
+            stream.WriteLine(przedmiot.ToString());
+            stream.Close();
 
-    }
+        }
 
-    public class Skin : Przedmiot
+        public class Skin : Przedmiot
     {
         protected string bron;
         protected string zuzycie;
@@ -42,7 +83,7 @@ namespace Projekt
             get { return pattern; }
             set
             {
-                if (value >= 0 && value <= 1)
+                if (value >= 0 && value <= 1000)
                 {
                     pattern = value;
                 }
@@ -52,14 +93,14 @@ namespace Projekt
                     pattern = 0;
                 }
 
-                else if (value > 1)
+                else if (value > 1000)
                 {
-                    pattern = 1;
+                    pattern = 1000;
                 }
             }
         }
 
-        public Skin(string img, string nazwa, string rzadkosc, string kolekcja, string opis, string bron, string zuzycie, double pattern) : base(img, nazwa, rzadkosc, kolekcja, opis)
+        public Skin(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string bron, string zuzycie, double pattern) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.bron = bron;
             this.zuzycie = zuzycie;
@@ -70,10 +111,10 @@ namespace Projekt
 
         public override string ToString()
         {
-            return string.Format("{0}, {1}, {2}, {3}, {4}, {5}, {6}", img, Nazwa, Rzadkosc, Kolekcja, bron, zuzycie, Pattern);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|-|-", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, bron, zuzycie, Pattern);
         }
 
-
+        }
     }
 
     public class Grafiti : Przedmiot
@@ -104,14 +145,14 @@ namespace Projekt
             }
         }
 
-        public Grafiti(string img, string nazwa, string rzadkosc, string kolekcja, string opis, int liczbaUzyc) : base(img, nazwa, rzadkosc, kolekcja, opis)
+        public Grafiti(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, int liczbaUzyc) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             LiczbaUzyc = liczbaUzyc;
         }
 
         public override string ToString()
         {
-            return string.Format("{0}, {1}, {2}, {3}, {4}", img, Nazwa, Rzadkosc, Kolekcja, LiczbaUzyc);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|{6}|-", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, LiczbaUzyc);
         }
     }
 
@@ -119,14 +160,14 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Naklejki(string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(img, nazwa, rzadkosc, kolekcja, opis)
+        public Naklejki(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }
 
         public override string ToString()
         {
-            return string.Format("{0}, {1}, {2}, {3}, {4}", img, Nazwa, Rzadkosc, Kolekcja, rodzaj);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|{6}", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, rodzaj);
         }
     }
 
@@ -134,14 +175,14 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Żetony(string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(img, nazwa, rzadkosc, kolekcja, opis)
+        public Żetony(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }
 
         public override string ToString()
         {
-            return string.Format("{0}, {1}, {2}, {3}, {4}", img, Nazwa, Rzadkosc, Kolekcja, rodzaj);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|{6}", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, rodzaj);
         }
 
     }
