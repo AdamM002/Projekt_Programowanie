@@ -57,8 +57,8 @@ namespace Projekt_Programowanie
 
         private void Dodaj_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            form.Show();
+            Form3 okno = new Form3();
+            okno.Show();
             this.Close();
         }
 
@@ -75,7 +75,7 @@ namespace Projekt_Programowanie
 
         private void Wyszukaj_opis_Click(object sender, EventArgs e)
         {
-            //test
+            //test zapisu
             Bitmap bmp = new Bitmap("C:\\Users\\verma\\OneDrive\\Pulpit\\plan.png");
             Obraz.Image = bmp;
             string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;

@@ -17,10 +17,14 @@ namespace Projekt_Programowanie
         {
             InitializeComponent();
         }
-
+        public string przedmiotRodzaj;
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            if (przedmiotRodzaj == "Skin")
+            {
+                LiczbaUzyc.ReadOnly = true;
+                Rodzaj.ReadOnly = true;
+            }
         }
 
         //dodawanie nowego przedmiotu do listy
@@ -41,6 +45,11 @@ namespace Projekt_Programowanie
         {
             if (Application.OpenForms.Count == 0)
                 Application.Exit();
+        }
+
+        private void rodzajPrzedmiotu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
