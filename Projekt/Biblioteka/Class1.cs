@@ -11,19 +11,17 @@ namespace Projekt
 
     public abstract class Przedmiot
     {
-        public enum RodzajPrzedmiotu { Skin, Grafiti, naklejki, zetony}
-        protected RodzajPrzedmiotu rodzajPrzedmiotu { set; get; }
+        protected int RodzajPrzedmiotu;
         protected string img;
         protected string Nazwa { get; set; }
-        public enum RzadkoscPrzedmiotu { konsumenckiej_jakości, wojskowej_jakości, przemysłowej_jakości, spoza_obiegu, klasy_poufne, klasy_tajne, standardowej_jakości, wyjątkowej_jakości, o_wybitnych_zdolnościach, naczelny, wysokiej_jakości, wyjątkowy_w_swojej_klasie, o_mistrzowskiej_wprawie, nadzwyczajnej_rzadkości, egzotycznego_pochodzenia, z_kontrabandy }
-        protected RzadkoscPrzedmiotu Rzadkosc { set; get; }
+        public string Rzadkosc;
         protected string Kolekcja { get; set; }
         protected string opis;
 
 
-        protected Przedmiot(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis)
+        protected Przedmiot(int rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis)
         {
-            this.rodzajPrzedmiotu = rodzajPrzedmiotu;
+            this.RodzajPrzedmiotu = rodzajPrzedmiotu;
             this.img = img;
             Nazwa = nazwa;
             Rzadkosc = rzadkosc;
@@ -33,7 +31,19 @@ namespace Projekt
 
         public virtual string ToString()
         {
-            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|-", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|-", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis);
+        }
+        public string ReturnNazwa()
+        {
+            string tekst = ToString();
+            string[] words = tekst.Split('|');
+            return words[2];
+        }
+        public string ReturnIMG()
+        {
+            string tekst = ToString();
+            string[] words = tekst.Split('|');
+            return words[1];
         }
 
         public static string[] Odczyt()
@@ -72,6 +82,7 @@ namespace Projekt
             stream.Close();
 
         }
+    }
 
         public class Skin : Przedmiot
     {
@@ -101,7 +112,7 @@ namespace Projekt
             }
         }
 
-        public Skin(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, string bron, string zuzycie, double pattern) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Skin(int rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string bron, string zuzycie, double pattern) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.bron = bron;
             this.zuzycie = zuzycie;
@@ -112,10 +123,9 @@ namespace Projekt
 
         public override string ToString()
         {
-            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|-|-", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, bron, zuzycie, Pattern);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|-|-", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, bron, zuzycie, Pattern);
         }
 
-        }
     }
 
     public class Grafiti : Przedmiot
@@ -146,14 +156,14 @@ namespace Projekt
             }
         }
 
-        public Grafiti(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, int liczbaUzyc) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Grafiti(int rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, int liczbaUzyc) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             LiczbaUzyc = liczbaUzyc;
         }
 
         public override string ToString()
         {
-            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|{6}|-", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, LiczbaUzyc);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|{6}|-", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, LiczbaUzyc);
         }
     }
 
@@ -161,14 +171,14 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Naklejki(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Naklejki(int rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }
 
         public override string ToString()
         {
-            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|{6}", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, rodzaj);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|{6}", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, rodzaj);
         }
     }
 
@@ -176,14 +186,14 @@ namespace Projekt
     {
         protected string rodzaj;
 
-        public Żetony(RodzajPrzedmiotu rodzajPrzedmiotu, string img, string nazwa, RzadkoscPrzedmiotu rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
+        public Żetony(int rodzajPrzedmiotu, string img, string nazwa, string rzadkosc, string kolekcja, string opis, string rodzaj) : base(rodzajPrzedmiotu, img, nazwa, rzadkosc, kolekcja, opis)
         {
             this.rodzaj = rodzaj;
         }
 
         public override string ToString()
         {
-            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|{6}", rodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, rodzaj);
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|{6}", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, rodzaj);
         }
 
     }

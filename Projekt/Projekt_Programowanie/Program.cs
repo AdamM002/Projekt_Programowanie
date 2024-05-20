@@ -20,13 +20,7 @@ namespace Projekt_Programowanie
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var myForm = new Form1();
-            string[] baza;
-            baza = Przedmiot.Odczyt();
-            for (int i = 0; i < baza.Length; i++)
-            {
-                string[] pozycje = baza[i].Split('|');
-                myForm.Wyszukiwarka_rozwijana.Items.Add(pozycje[2]);
-            }
+            
             myForm.Show();
             Application.Run();
 

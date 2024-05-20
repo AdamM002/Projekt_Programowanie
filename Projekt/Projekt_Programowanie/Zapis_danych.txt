@@ -1,2 +1,2 @@
-Skin|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|-|-
-Skin|\\obrazy\\moneyman.jpg|mundo|rare|nie_wiem|brak|-|-
+0|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|Cz|500|500|-|-
+0|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|Cz|500|500|-|-

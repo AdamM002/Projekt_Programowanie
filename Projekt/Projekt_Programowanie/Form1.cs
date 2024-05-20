@@ -19,11 +19,25 @@ namespace Projekt_Programowanie
         public Form1()
         {
             InitializeComponent();
+            
         }
+        Przedmiot[] przedmioty;
 
         public void Form1_Load(object sender, EventArgs e)
         {
-
+            string[] baza;
+            baza = Przedmiot.Odczyt();
+            przedmioty = new Przedmiot[baza.Length];
+            for (int i = 0; i < baza.Length; i++)
+            {
+                string[] pozycje = baza[i].Split('|');
+                
+                if (pozycje[0] == "0") przedmioty[i]=new Skin(Convert.ToInt32(pozycje[0]), pozycje[1], pozycje[2], pozycje[3], pozycje[4], pozycje[5], pozycje[6], pozycje[7], Convert.ToDouble(pozycje[8]));
+                else if (pozycje[0] == "1") przedmioty[i] = new Grafiti(Convert.ToInt32(pozycje[0]), pozycje[1], pozycje[2], pozycje[3], pozycje[4], pozycje[5], Convert.ToInt32(pozycje[9]));
+                else if (pozycje[0] == "2") przedmioty[i] = new Żetony(Convert.ToInt32(pozycje[0]), pozycje[1], pozycje[2], pozycje[3], pozycje[4], pozycje[5], pozycje[10]);
+                else if (pozycje[0] == "3") przedmioty[i] = new Naklejki(Convert.ToInt32(pozycje[0]), pozycje[1], pozycje[2], pozycje[3], pozycje[4], pozycje[5], pozycje[10]);
+                Wyszukiwarka_rozwijana.Items.Add(przedmioty[i].ReturnNazwa());
+            }
         }
 
         private void Wyszukaj_Click(object sender, EventArgs e)
@@ -32,14 +46,12 @@ namespace Projekt_Programowanie
             {
                 string tekst = Wyszukiwarka_rozwijana.Text;
                 int index = Wyszukiwarka_rozwijana.SelectedIndex;
-                string[] baza;
-                baza = Przedmiot.Odczyt();
-                string[] pozycje = baza[index].Split('|');
                 string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
-                FileStream stream = new FileStream(parentDirectory + pozycje[1], FileMode.Open, FileAccess.Read);
+                FileStream stream = new FileStream(parentDirectory + przedmioty[index].ReturnIMG(), FileMode.Open, FileAccess.Read);
                 Obraz.Image = Image.FromStream(stream);
                 stream.Close();
-                textBox1.Text = pozycje[2];
+                textBox1.Text = przedmioty[index].ReturnNazwa();
+                
             }
         }
 
