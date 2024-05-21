@@ -50,7 +50,7 @@ namespace Projekt_Programowanie
                 FileStream stream = new FileStream(parentDirectory + przedmioty[index].ReturnIMG(), FileMode.Open, FileAccess.Read);
                 Obraz.Image = Image.FromStream(stream);
                 stream.Close();
-                textBox1.Text = przedmioty[index].ReturnNazwa();
+                Nazwa_Przedmiotu.Text = przedmioty[index].ReturnNazwa();
                 
             }
         }
@@ -88,6 +88,11 @@ namespace Projekt_Programowanie
         }
 
         private void Wyszukiwarka_rozwijana_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

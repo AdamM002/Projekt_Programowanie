@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Wyszukaj = new System.Windows.Forms.Button();
             this.Dodaj = new System.Windows.Forms.Button();
             this.Wyszukiwarka_rozwijana = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Nazwa_Przedmiotu = new System.Windows.Forms.TextBox();
             this.Wyszukaj_opis = new System.Windows.Forms.Button();
             this.Obraz = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Obraz)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Wyszukaj
             // 
-            this.Wyszukaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Wyszukaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Wyszukaj.Location = new System.Drawing.Point(478, 30);
             this.Wyszukaj.Name = "Wyszukaj";
             this.Wyszukaj.Size = new System.Drawing.Size(90, 32);
@@ -52,7 +54,7 @@
             // 
             // Dodaj
             // 
-            this.Dodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dodaj.Location = new System.Drawing.Point(574, 30);
             this.Dodaj.Name = "Dodaj";
             this.Dodaj.Size = new System.Drawing.Size(86, 32);
@@ -63,6 +65,8 @@
             // 
             // Wyszukiwarka_rozwijana
             // 
+            this.Wyszukiwarka_rozwijana.BackColor = System.Drawing.Color.White;
+            this.Wyszukiwarka_rozwijana.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Wyszukiwarka_rozwijana.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Wyszukiwarka_rozwijana.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.Wyszukiwarka_rozwijana.FormattingEnabled = true;
@@ -70,22 +74,26 @@
             this.Wyszukiwarka_rozwijana.Name = "Wyszukiwarka_rozwijana";
             this.Wyszukiwarka_rozwijana.Size = new System.Drawing.Size(321, 33);
             this.Wyszukiwarka_rozwijana.TabIndex = 5;
-            this.Wyszukiwarka_rozwijana.Text = " ...";
             this.Wyszukiwarka_rozwijana.SelectedIndexChanged += new System.EventHandler(this.Wyszukiwarka_rozwijana_SelectedIndexChanged);
             // 
-            // textBox1
+            // Nazwa_Przedmiotu
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(436, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(321, 13);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Nazwa_Przedmiotu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Nazwa_Przedmiotu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Nazwa_Przedmiotu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Nazwa_Przedmiotu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nazwa_Przedmiotu.ForeColor = System.Drawing.Color.Silver;
+            this.Nazwa_Przedmiotu.Location = new System.Drawing.Point(20, 358);
+            this.Nazwa_Przedmiotu.Name = "Nazwa_Przedmiotu";
+            this.Nazwa_Przedmiotu.ReadOnly = true;
+            this.Nazwa_Przedmiotu.Size = new System.Drawing.Size(321, 24);
+            this.Nazwa_Przedmiotu.TabIndex = 6;
+            this.Nazwa_Przedmiotu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Nazwa_Przedmiotu.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Wyszukaj_opis
             // 
-            this.Wyszukaj_opis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Wyszukaj_opis.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Wyszukaj_opis.Location = new System.Drawing.Point(666, 30);
             this.Wyszukaj_opis.Name = "Wyszukaj_opis";
             this.Wyszukaj_opis.Size = new System.Drawing.Size(88, 32);
@@ -103,7 +111,7 @@
             this.Obraz.InitialImage = global::Projekt_Programowanie.Properties.Resources.moneyman;
             this.Obraz.Location = new System.Drawing.Point(20, 18);
             this.Obraz.Name = "Obraz";
-            this.Obraz.Size = new System.Drawing.Size(358, 357);
+            this.Obraz.Size = new System.Drawing.Size(321, 334);
             this.Obraz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Obraz.TabIndex = 2;
             this.Obraz.TabStop = false;
@@ -112,12 +120,24 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Obraz);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.Nazwa_Przedmiotu);
             this.panel1.Location = new System.Drawing.Point(42, 90);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(817, 397);
             this.panel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(358, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
@@ -133,6 +153,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(917, 567);
             this.MinimumSize = new System.Drawing.Size(917, 567);
             this.Name = "Form1";
@@ -150,10 +171,11 @@
         private System.Windows.Forms.Button Wyszukaj;
         private System.Windows.Forms.Button Dodaj;
         public System.Windows.Forms.ComboBox Wyszukiwarka_rozwijana;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Nazwa_Przedmiotu;
         private System.Windows.Forms.Button Wyszukaj_opis;
         private System.Windows.Forms.PictureBox Obraz;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
