@@ -51,22 +51,28 @@
             this.Zuzycie = new System.Windows.Forms.TextBox();
             this.Rodzaj = new System.Windows.Forms.TextBox();
             this.obraz = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.LiczbaUzyc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obraz)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Nazwa
             // 
-            this.Nazwa.Location = new System.Drawing.Point(109, 93);
+            this.Nazwa.Location = new System.Drawing.Point(79, 115);
             this.Nazwa.Name = "Nazwa";
-            this.Nazwa.Size = new System.Drawing.Size(350, 20);
+            this.Nazwa.Size = new System.Drawing.Size(351, 20);
             this.Nazwa.TabIndex = 0;
             // 
             // akceptuj
             // 
-            this.akceptuj.Location = new System.Drawing.Point(232, 464);
+            this.akceptuj.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.akceptuj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.akceptuj.Location = new System.Drawing.Point(206, 578);
             this.akceptuj.Name = "akceptuj";
-            this.akceptuj.Size = new System.Drawing.Size(75, 23);
+            this.akceptuj.Size = new System.Drawing.Size(129, 41);
             this.akceptuj.TabIndex = 1;
             this.akceptuj.Text = "Akceptuj";
             this.akceptuj.UseVisualStyleBackColor = true;
@@ -75,11 +81,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 96);
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(33, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Nazwa Przedmiotu";
+            this.label2.Text = "Nazwa";
             // 
             // Rzadkosc
             // 
@@ -102,15 +109,16 @@
             "nadzwyczajnej rzadkości",
             "egzotycznego pochodzenia",
             "z kontrabandy"});
-            this.Rzadkosc.Location = new System.Drawing.Point(109, 133);
+            this.Rzadkosc.Location = new System.Drawing.Point(79, 150);
             this.Rzadkosc.Name = "Rzadkosc";
-            this.Rzadkosc.Size = new System.Drawing.Size(350, 21);
+            this.Rzadkosc.Size = new System.Drawing.Size(351, 21);
             this.Rzadkosc.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 136);
+            this.label3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label3.Location = new System.Drawing.Point(18, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 6;
@@ -119,7 +127,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 9);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.Location = new System.Drawing.Point(9, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 7;
@@ -127,9 +137,9 @@
             // 
             // UploadImage
             // 
-            this.UploadImage.Location = new System.Drawing.Point(109, 4);
+            this.UploadImage.Location = new System.Drawing.Point(79, 20);
             this.UploadImage.Name = "UploadImage";
-            this.UploadImage.Size = new System.Drawing.Size(350, 23);
+            this.UploadImage.Size = new System.Drawing.Size(351, 23);
             this.UploadImage.TabIndex = 8;
             this.UploadImage.Text = "Upload";
             this.UploadImage.UseVisualStyleBackColor = true;
@@ -138,7 +148,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 169);
+            this.label5.ForeColor = System.Drawing.Color.Silver;
+            this.label5.Location = new System.Drawing.Point(25, 188);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 13);
             this.label5.TabIndex = 9;
@@ -147,7 +158,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(75, 200);
+            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.Location = new System.Drawing.Point(45, 223);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 13);
             this.label6.TabIndex = 10;
@@ -155,23 +167,24 @@
             // 
             // Kolekcja
             // 
-            this.Kolekcja.Location = new System.Drawing.Point(109, 166);
+            this.Kolekcja.Location = new System.Drawing.Point(79, 185);
             this.Kolekcja.Name = "Kolekcja";
-            this.Kolekcja.Size = new System.Drawing.Size(350, 20);
+            this.Kolekcja.Size = new System.Drawing.Size(351, 20);
             this.Kolekcja.TabIndex = 11;
             // 
             // Opis
             // 
-            this.Opis.Location = new System.Drawing.Point(109, 197);
+            this.Opis.Location = new System.Drawing.Point(79, 220);
             this.Opis.Name = "Opis";
-            this.Opis.Size = new System.Drawing.Size(350, 100);
+            this.Opis.Size = new System.Drawing.Size(351, 100);
             this.Opis.TabIndex = 13;
             this.Opis.Text = "";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(75, 311);
+            this.label7.ForeColor = System.Drawing.Color.Silver;
+            this.label7.Location = new System.Drawing.Point(44, 338);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 13);
             this.label7.TabIndex = 14;
@@ -214,15 +227,16 @@
             "SG 553",
             "UMP-45",
             "XM1014"});
-            this.bron.Location = new System.Drawing.Point(109, 308);
+            this.bron.Location = new System.Drawing.Point(79, 335);
             this.bron.Name = "bron";
-            this.bron.Size = new System.Drawing.Size(350, 21);
+            this.bron.Size = new System.Drawing.Size(351, 21);
             this.bron.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(60, 344);
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(29, 373);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 16;
@@ -231,7 +245,8 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(63, 371);
+            this.label9.ForeColor = System.Drawing.Color.Silver;
+            this.label9.Location = new System.Drawing.Point(32, 408);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(41, 13);
             this.label9.TabIndex = 17;
@@ -240,7 +255,8 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(42, 398);
+            this.label10.ForeColor = System.Drawing.Color.Silver;
+            this.label10.Location = new System.Drawing.Point(11, 442);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(62, 13);
             this.label10.TabIndex = 18;
@@ -249,7 +265,8 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(63, 429);
+            this.label11.ForeColor = System.Drawing.Color.Silver;
+            this.label11.Location = new System.Drawing.Point(33, 478);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 13);
             this.label11.TabIndex = 19;
@@ -257,28 +274,28 @@
             // 
             // LiczbaUzyc
             // 
-            this.LiczbaUzyc.Location = new System.Drawing.Point(110, 396);
+            this.LiczbaUzyc.Location = new System.Drawing.Point(79, 440);
             this.LiczbaUzyc.Name = "LiczbaUzyc";
-            this.LiczbaUzyc.Size = new System.Drawing.Size(349, 20);
+            this.LiczbaUzyc.Size = new System.Drawing.Size(351, 20);
             this.LiczbaUzyc.TabIndex = 20;
             // 
             // Pattern
             // 
-            this.Pattern.Location = new System.Drawing.Point(110, 368);
+            this.Pattern.Location = new System.Drawing.Point(79, 405);
             this.Pattern.Name = "Pattern";
-            this.Pattern.Size = new System.Drawing.Size(349, 20);
+            this.Pattern.Size = new System.Drawing.Size(351, 20);
             this.Pattern.TabIndex = 21;
             // 
             // Zuzycie
             // 
-            this.Zuzycie.Location = new System.Drawing.Point(109, 341);
+            this.Zuzycie.Location = new System.Drawing.Point(79, 370);
             this.Zuzycie.Name = "Zuzycie";
-            this.Zuzycie.Size = new System.Drawing.Size(350, 20);
+            this.Zuzycie.Size = new System.Drawing.Size(351, 20);
             this.Zuzycie.TabIndex = 22;
             // 
             // Rodzaj
             // 
-            this.Rodzaj.Location = new System.Drawing.Point(109, 426);
+            this.Rodzaj.Location = new System.Drawing.Point(79, 475);
             this.Rodzaj.Name = "Rodzaj";
             this.Rodzaj.Size = new System.Drawing.Size(351, 20);
             this.Rodzaj.TabIndex = 23;
@@ -286,49 +303,62 @@
             // obraz
             // 
             this.obraz.Image = global::Projekt_Programowanie.Properties.Resources.moneyman;
-            this.obraz.Location = new System.Drawing.Point(232, 33);
+            this.obraz.Location = new System.Drawing.Point(207, 55);
             this.obraz.Name = "obraz";
             this.obraz.Size = new System.Drawing.Size(100, 50);
             this.obraz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.obraz.TabIndex = 24;
             this.obraz.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panel1.Controls.Add(this.UploadImage);
+            this.panel1.Controls.Add(this.obraz);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.Nazwa);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.Rzadkosc);
+            this.panel1.Controls.Add(this.Kolekcja);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.bron);
+            this.panel1.Controls.Add(this.Opis);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.Zuzycie);
+            this.panel1.Controls.Add(this.Pattern);
+            this.panel1.Controls.Add(this.LiczbaUzyc);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.Rodzaj);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Location = new System.Drawing.Point(45, 41);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(453, 518);
+            this.panel1.TabIndex = 25;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 505);
-            this.Controls.Add(this.obraz);
-            this.Controls.Add(this.Rodzaj);
-            this.Controls.Add(this.Zuzycie);
-            this.Controls.Add(this.Pattern);
-            this.Controls.Add(this.LiczbaUzyc);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.bron);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.Opis);
-            this.Controls.Add(this.Kolekcja);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.UploadImage);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Rzadkosc);
-            this.Controls.Add(this.label2);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.ClientSize = new System.Drawing.Size(546, 642);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.akceptuj);
-            this.Controls.Add(this.Nazwa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(562, 681);
+            this.MinimumSize = new System.Drawing.Size(562, 681);
             this.Name = "Form2";
             this.Text = "Dodaj";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LiczbaUzyc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.obraz)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -356,5 +386,6 @@
         private System.Windows.Forms.TextBox Zuzycie;
         private System.Windows.Forms.TextBox Rodzaj;
         private System.Windows.Forms.PictureBox obraz;
+        private System.Windows.Forms.Panel panel1;
     }
 }

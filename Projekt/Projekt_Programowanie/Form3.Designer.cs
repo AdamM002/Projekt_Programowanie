@@ -73,7 +73,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(33, 31);
+            this.panel1.Location = new System.Drawing.Point(32, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(209, 177);
             this.panel1.TabIndex = 4;
@@ -98,7 +98,8 @@
             this.ClientSize = new System.Drawing.Size(273, 239);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(211, 145);
+            this.MaximumSize = new System.Drawing.Size(289, 278);
+            this.MinimumSize = new System.Drawing.Size(289, 278);
             this.Name = "Form3";
             this.Text = "Dodaj";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
