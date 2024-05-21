@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\projekt_programowanie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|solutionrelative:projekt_programowanie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|c:\\users\\ngojen\\documents\\github\\projekt_programowanie\\projekt\\projekt_programowanie\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|solutionrelative:projekt_programowanie\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|c:\\users\\ngojen\\documents\\github\\projekt_programowanie\\projekt\\projekt_programowanie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|solutionrelative:projekt_programowanie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|c:\\users\\ngojen\\documents\\github\\projekt_programowanie\\projekt\\projekt_programowanie\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\projekt_programowanie\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E181A386-37D4-4A58-A6B0-F271102AE896}|Projekt_Programowanie\\Projekt_Programowanie.csproj|solutionrelative:projekt_programowanie\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Projekt_Programowanie\\Form2.cs",
               "RelativeDocumentMoniker": "Projekt_Programowanie\\Form2.cs",
@@ -50,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ngojen\\Documents\\GitHub\\Projekt_Programowanie\\Projekt\\Projekt_Programowanie\\Form1.cs",
               "RelativeDocumentMoniker": "Projekt_Programowanie\\Form1.cs",

@@ -37,8 +37,26 @@
             this.Obraz = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.kolekcja_TextBox = new System.Windows.Forms.TextBox();
+            this.rzadkość_TextBox = new System.Windows.Forms.TextBox();
+            this.bron_TextBox = new System.Windows.Forms.TextBox();
+            this.zuzycie_TextBox = new System.Windows.Forms.TextBox();
+            this.pattern_TextBox = new System.Windows.Forms.TextBox();
+            this.uzycia_TextBox = new System.Windows.Forms.TextBox();
+            this.rodzaj_TextBox = new System.Windows.Forms.TextBox();
+            this.opis_TextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Obraz)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Wyszukaj
@@ -79,11 +97,11 @@
             // Nazwa_Przedmiotu
             // 
             this.Nazwa_Przedmiotu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Nazwa_Przedmiotu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Nazwa_Przedmiotu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Nazwa_Przedmiotu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Nazwa_Przedmiotu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nazwa_Przedmiotu.ForeColor = System.Drawing.Color.Silver;
-            this.Nazwa_Przedmiotu.Location = new System.Drawing.Point(20, 358);
+            this.Nazwa_Przedmiotu.Location = new System.Drawing.Point(20, 360);
             this.Nazwa_Przedmiotu.Name = "Nazwa_Przedmiotu";
             this.Nazwa_Przedmiotu.ReadOnly = true;
             this.Nazwa_Przedmiotu.Size = new System.Drawing.Size(321, 24);
@@ -123,9 +141,10 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Obraz);
             this.panel1.Controls.Add(this.Nazwa_Przedmiotu);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(42, 90);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(817, 397);
+            this.panel1.Size = new System.Drawing.Size(817, 401);
             this.panel1.TabIndex = 8;
             // 
             // label1
@@ -138,6 +157,219 @@
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 7;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(12, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Kolekcja: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.panel2.Controls.Add(this.opis_TextBox);
+            this.panel2.Controls.Add(this.rodzaj_TextBox);
+            this.panel2.Controls.Add(this.uzycia_TextBox);
+            this.panel2.Controls.Add(this.pattern_TextBox);
+            this.panel2.Controls.Add(this.zuzycie_TextBox);
+            this.panel2.Controls.Add(this.bron_TextBox);
+            this.panel2.Controls.Add(this.rzadkość_TextBox);
+            this.panel2.Controls.Add(this.kolekcja_TextBox);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(347, 18);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(451, 364);
+            this.panel2.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(12, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Rzadkość: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.Location = new System.Drawing.Point(12, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Broń: ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Silver;
+            this.label5.Location = new System.Drawing.Point(12, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Zużycie: ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.Location = new System.Drawing.Point(12, 138);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Pattern: ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Silver;
+            this.label7.Location = new System.Drawing.Point(12, 234);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 20);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Opis: ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(12, 170);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(115, 20);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Liczba Użyć: ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Silver;
+            this.label9.Location = new System.Drawing.Point(12, 202);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 20);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Rodzaj: ";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // kolekcja_TextBox
+            // 
+            this.kolekcja_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.kolekcja_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.kolekcja_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kolekcja_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.kolekcja_TextBox.Location = new System.Drawing.Point(104, 11);
+            this.kolekcja_TextBox.Name = "kolekcja_TextBox";
+            this.kolekcja_TextBox.ReadOnly = true;
+            this.kolekcja_TextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.kolekcja_TextBox.Size = new System.Drawing.Size(334, 19);
+            this.kolekcja_TextBox.TabIndex = 16;
+            // 
+            // rzadkość_TextBox
+            // 
+            this.rzadkość_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.rzadkość_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rzadkość_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rzadkość_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.rzadkość_TextBox.Location = new System.Drawing.Point(116, 42);
+            this.rzadkość_TextBox.Name = "rzadkość_TextBox";
+            this.rzadkość_TextBox.ReadOnly = true;
+            this.rzadkość_TextBox.Size = new System.Drawing.Size(322, 19);
+            this.rzadkość_TextBox.TabIndex = 17;
+            // 
+            // bron_TextBox
+            // 
+            this.bron_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.bron_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bron_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bron_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.bron_TextBox.Location = new System.Drawing.Point(75, 75);
+            this.bron_TextBox.Name = "bron_TextBox";
+            this.bron_TextBox.ReadOnly = true;
+            this.bron_TextBox.Size = new System.Drawing.Size(363, 19);
+            this.bron_TextBox.TabIndex = 18;
+            // 
+            // zuzycie_TextBox
+            // 
+            this.zuzycie_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.zuzycie_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.zuzycie_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zuzycie_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.zuzycie_TextBox.Location = new System.Drawing.Point(98, 107);
+            this.zuzycie_TextBox.Name = "zuzycie_TextBox";
+            this.zuzycie_TextBox.ReadOnly = true;
+            this.zuzycie_TextBox.Size = new System.Drawing.Size(340, 19);
+            this.zuzycie_TextBox.TabIndex = 19;
+            // 
+            // pattern_TextBox
+            // 
+            this.pattern_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.pattern_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.pattern_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pattern_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.pattern_TextBox.Location = new System.Drawing.Point(96, 139);
+            this.pattern_TextBox.Name = "pattern_TextBox";
+            this.pattern_TextBox.ReadOnly = true;
+            this.pattern_TextBox.Size = new System.Drawing.Size(342, 19);
+            this.pattern_TextBox.TabIndex = 20;
+            // 
+            // uzycia_TextBox
+            // 
+            this.uzycia_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.uzycia_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uzycia_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uzycia_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.uzycia_TextBox.Location = new System.Drawing.Point(133, 171);
+            this.uzycia_TextBox.Name = "uzycia_TextBox";
+            this.uzycia_TextBox.ReadOnly = true;
+            this.uzycia_TextBox.Size = new System.Drawing.Size(305, 19);
+            this.uzycia_TextBox.TabIndex = 21;
+            // 
+            // rodzaj_TextBox
+            // 
+            this.rodzaj_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.rodzaj_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rodzaj_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rodzaj_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.rodzaj_TextBox.Location = new System.Drawing.Point(93, 203);
+            this.rodzaj_TextBox.Name = "rodzaj_TextBox";
+            this.rodzaj_TextBox.ReadOnly = true;
+            this.rodzaj_TextBox.Size = new System.Drawing.Size(345, 19);
+            this.rodzaj_TextBox.TabIndex = 22;
+            // 
+            // opis_TextBox
+            // 
+            this.opis_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.opis_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.opis_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opis_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.opis_TextBox.Location = new System.Drawing.Point(73, 234);
+            this.opis_TextBox.Multiline = true;
+            this.opis_TextBox.Name = "opis_TextBox";
+            this.opis_TextBox.ReadOnly = true;
+            this.opis_TextBox.Size = new System.Drawing.Size(365, 116);
+            this.opis_TextBox.TabIndex = 23;
             // 
             // Form1
             // 
@@ -163,6 +395,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Obraz)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -176,6 +410,23 @@
         private System.Windows.Forms.PictureBox Obraz;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox rodzaj_TextBox;
+        private System.Windows.Forms.TextBox uzycia_TextBox;
+        private System.Windows.Forms.TextBox pattern_TextBox;
+        private System.Windows.Forms.TextBox zuzycie_TextBox;
+        private System.Windows.Forms.TextBox bron_TextBox;
+        private System.Windows.Forms.TextBox rzadkość_TextBox;
+        private System.Windows.Forms.TextBox kolekcja_TextBox;
+        private System.Windows.Forms.TextBox opis_TextBox;
     }
 }
 

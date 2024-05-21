@@ -34,5 +34,10 @@ namespace Projekt_Programowanie
             if (Application.OpenForms.Count == 0)
                 Application.Exit();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
