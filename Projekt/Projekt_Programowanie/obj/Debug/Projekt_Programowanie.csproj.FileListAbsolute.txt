@@ -38,3 +38,4 @@ C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Prog
 C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\bin\Debug\Biblioteka.pdb
 C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.csproj.CopyComplete
 C:\Users\verma\OneDrive\Pulpit\Github\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.Form3.resources
+C:\Users\ngojen\Documents\GitHub\Projekt_Programowanie\Projekt\Projekt_Programowanie\obj\Debug\Projekt_Programowanie.Form3.resources

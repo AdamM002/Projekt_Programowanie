@@ -82,5 +82,14 @@ namespace Projekt_Programowanie
             bmp.Save(parentDirectory + "\\obrazy\\test1.png", ImageFormat.Png);
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wyszukiwarka_rozwijana_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
