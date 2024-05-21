@@ -75,11 +75,6 @@ namespace Projekt_Programowanie
 
         private void Wyszukaj_opis_Click(object sender, EventArgs e)
         {
-            //test zapisu
-            Bitmap bmp = new Bitmap("C:\\Users\\verma\\OneDrive\\Pulpit\\plan.png");
-            Obraz.Image = bmp;
-            string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
-            bmp.Save(parentDirectory + "\\obrazy\\test1.png", ImageFormat.Png);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

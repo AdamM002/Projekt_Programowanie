@@ -32,7 +32,7 @@
             this.Nazwa = new System.Windows.Forms.TextBox();
             this.akceptuj = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Rzadkosc = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.UploadImage = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.Kolekcja = new System.Windows.Forms.TextBox();
             this.Opis = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.bron = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -50,40 +50,42 @@
             this.Pattern = new System.Windows.Forms.TextBox();
             this.Zuzycie = new System.Windows.Forms.TextBox();
             this.Rodzaj = new System.Windows.Forms.TextBox();
+            this.obraz = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.LiczbaUzyc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obraz)).BeginInit();
             this.SuspendLayout();
             // 
             // Nazwa
             // 
-            this.Nazwa.Location = new System.Drawing.Point(109, 45);
+            this.Nazwa.Location = new System.Drawing.Point(109, 93);
             this.Nazwa.Name = "Nazwa";
             this.Nazwa.Size = new System.Drawing.Size(350, 20);
             this.Nazwa.TabIndex = 0;
             // 
             // akceptuj
             // 
-            this.akceptuj.Location = new System.Drawing.Point(232, 416);
+            this.akceptuj.Location = new System.Drawing.Point(232, 464);
             this.akceptuj.Name = "akceptuj";
             this.akceptuj.Size = new System.Drawing.Size(75, 23);
             this.akceptuj.TabIndex = 1;
-            this.akceptuj.Text = "button1";
+            this.akceptuj.Text = "Akceptuj";
             this.akceptuj.UseVisualStyleBackColor = true;
             this.akceptuj.Click += new System.EventHandler(this.akceptuj_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 48);
+            this.label2.Location = new System.Drawing.Point(8, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nazwa Przedmiotu";
             // 
-            // comboBox1
+            // Rzadkosc
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Rzadkosc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Rzadkosc.FormattingEnabled = true;
+            this.Rzadkosc.Items.AddRange(new object[] {
             "konsumenckiej jakości",
             "wojskowej jakości",
             "przemysłowej jakości",
@@ -100,15 +102,15 @@
             "nadzwyczajnej rzadkości",
             "egzotycznego pochodzenia",
             "z kontrabandy"});
-            this.comboBox1.Location = new System.Drawing.Point(109, 85);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(350, 21);
-            this.comboBox1.TabIndex = 5;
+            this.Rzadkosc.Location = new System.Drawing.Point(109, 133);
+            this.Rzadkosc.Name = "Rzadkosc";
+            this.Rzadkosc.Size = new System.Drawing.Size(350, 21);
+            this.Rzadkosc.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 88);
+            this.label3.Location = new System.Drawing.Point(48, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 6;
@@ -131,11 +133,12 @@
             this.UploadImage.TabIndex = 8;
             this.UploadImage.Text = "Upload";
             this.UploadImage.UseVisualStyleBackColor = true;
+            this.UploadImage.Click += new System.EventHandler(this.UploadImage_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 121);
+            this.label5.Location = new System.Drawing.Point(55, 169);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 13);
             this.label5.TabIndex = 9;
@@ -144,7 +147,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(75, 152);
+            this.label6.Location = new System.Drawing.Point(75, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 13);
             this.label6.TabIndex = 10;
@@ -152,14 +155,14 @@
             // 
             // Kolekcja
             // 
-            this.Kolekcja.Location = new System.Drawing.Point(109, 118);
+            this.Kolekcja.Location = new System.Drawing.Point(109, 166);
             this.Kolekcja.Name = "Kolekcja";
             this.Kolekcja.Size = new System.Drawing.Size(350, 20);
             this.Kolekcja.TabIndex = 11;
             // 
             // Opis
             // 
-            this.Opis.Location = new System.Drawing.Point(109, 149);
+            this.Opis.Location = new System.Drawing.Point(109, 197);
             this.Opis.Name = "Opis";
             this.Opis.Size = new System.Drawing.Size(350, 100);
             this.Opis.TabIndex = 13;
@@ -168,17 +171,17 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(75, 263);
+            this.label7.Location = new System.Drawing.Point(75, 311);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Broń";
             // 
-            // comboBox2
+            // bron
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.bron.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bron.FormattingEnabled = true;
+            this.bron.Items.AddRange(new object[] {
             "228 compact",
             "Ak-47",
             "Aug",
@@ -211,15 +214,15 @@
             "SG 553",
             "UMP-45",
             "XM1014"});
-            this.comboBox2.Location = new System.Drawing.Point(109, 260);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(350, 21);
-            this.comboBox2.TabIndex = 15;
+            this.bron.Location = new System.Drawing.Point(109, 308);
+            this.bron.Name = "bron";
+            this.bron.Size = new System.Drawing.Size(350, 21);
+            this.bron.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(60, 296);
+            this.label8.Location = new System.Drawing.Point(60, 344);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 16;
@@ -228,7 +231,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(63, 323);
+            this.label9.Location = new System.Drawing.Point(63, 371);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(41, 13);
             this.label9.TabIndex = 17;
@@ -237,7 +240,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(42, 350);
+            this.label10.Location = new System.Drawing.Point(42, 398);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(62, 13);
             this.label10.TabIndex = 18;
@@ -246,7 +249,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(63, 381);
+            this.label11.Location = new System.Drawing.Point(63, 429);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 13);
             this.label11.TabIndex = 19;
@@ -254,37 +257,48 @@
             // 
             // LiczbaUzyc
             // 
-            this.LiczbaUzyc.Location = new System.Drawing.Point(110, 348);
+            this.LiczbaUzyc.Location = new System.Drawing.Point(110, 396);
             this.LiczbaUzyc.Name = "LiczbaUzyc";
             this.LiczbaUzyc.Size = new System.Drawing.Size(349, 20);
             this.LiczbaUzyc.TabIndex = 20;
             // 
             // Pattern
             // 
-            this.Pattern.Location = new System.Drawing.Point(110, 320);
+            this.Pattern.Location = new System.Drawing.Point(110, 368);
             this.Pattern.Name = "Pattern";
             this.Pattern.Size = new System.Drawing.Size(349, 20);
             this.Pattern.TabIndex = 21;
             // 
             // Zuzycie
             // 
-            this.Zuzycie.Location = new System.Drawing.Point(109, 293);
+            this.Zuzycie.Location = new System.Drawing.Point(109, 341);
             this.Zuzycie.Name = "Zuzycie";
             this.Zuzycie.Size = new System.Drawing.Size(350, 20);
             this.Zuzycie.TabIndex = 22;
             // 
             // Rodzaj
             // 
-            this.Rodzaj.Location = new System.Drawing.Point(109, 378);
+            this.Rodzaj.Location = new System.Drawing.Point(109, 426);
             this.Rodzaj.Name = "Rodzaj";
             this.Rodzaj.Size = new System.Drawing.Size(351, 20);
             this.Rodzaj.TabIndex = 23;
+            // 
+            // obraz
+            // 
+            this.obraz.Image = global::Projekt_Programowanie.Properties.Resources.moneyman;
+            this.obraz.Location = new System.Drawing.Point(232, 33);
+            this.obraz.Name = "obraz";
+            this.obraz.Size = new System.Drawing.Size(100, 50);
+            this.obraz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.obraz.TabIndex = 24;
+            this.obraz.TabStop = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 456);
+            this.ClientSize = new System.Drawing.Size(503, 505);
+            this.Controls.Add(this.obraz);
             this.Controls.Add(this.Rodzaj);
             this.Controls.Add(this.Zuzycie);
             this.Controls.Add(this.Pattern);
@@ -293,7 +307,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.bron);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Opis);
             this.Controls.Add(this.Kolekcja);
@@ -302,7 +316,7 @@
             this.Controls.Add(this.UploadImage);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Rzadkosc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.akceptuj);
             this.Controls.Add(this.Nazwa);
@@ -312,6 +326,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LiczbaUzyc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obraz)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,7 +337,7 @@
         private System.Windows.Forms.TextBox Nazwa;
         private System.Windows.Forms.Button akceptuj;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Rzadkosc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button UploadImage;
@@ -331,7 +346,7 @@
         private System.Windows.Forms.TextBox Kolekcja;
         private System.Windows.Forms.RichTextBox Opis;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox bron;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -340,5 +355,6 @@
         private System.Windows.Forms.TextBox Pattern;
         private System.Windows.Forms.TextBox Zuzycie;
         private System.Windows.Forms.TextBox Rodzaj;
+        private System.Windows.Forms.PictureBox obraz;
     }
 }

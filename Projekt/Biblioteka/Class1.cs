@@ -29,7 +29,7 @@ namespace Projekt
             this.opis = opis;
         }
 
-        public virtual string ToString()
+        public override string ToString()
         {
             return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|-", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis);
         }
@@ -67,8 +67,7 @@ namespace Projekt
             stream.Close();
             return baza2;
         }
-
-        public static void Zapis(string przedmiot)
+        public void Zapis()
         {
             string[] baza;
             baza = Odczyt();
@@ -78,7 +77,7 @@ namespace Projekt
             {
                 stream.WriteLine(baza[i]);
             }
-            stream.WriteLine(przedmiot.ToString());
+            stream.WriteLine(ToString());
             stream.Close();
 
         }
@@ -125,7 +124,6 @@ namespace Projekt
         {
             return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|-|-", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, bron, zuzycie, Pattern);
         }
-
     }
 
     public class Grafiti : Przedmiot
@@ -195,6 +193,5 @@ namespace Projekt
         {
             return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|{6}", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis, rodzaj);
         }
-
     }
 }

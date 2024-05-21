@@ -1,2 +1,5 @@
 0|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|Cz|500|500|-|-
 0|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|Cz|500|500|-|-
+1|\\obrazy\\testowy_mundo.png|testowy_mundo|konsumenckiej jakości|testowa|to jest test|-|-|-|40|-
+2|\\obrazy\\test.png|test|egzotycznego pochodzenia|abc|ggdfs|-|-|-|-|idk
+3|\\obrazy\\zetony.png|zetony|o mistrzowskiej wprawie|haha|gdsfsddss|-|-|-|-|no
