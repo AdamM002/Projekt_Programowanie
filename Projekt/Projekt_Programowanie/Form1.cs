@@ -50,7 +50,7 @@ namespace Projekt_Programowanie
                 FileStream stream = new FileStream(parentDirectory + przedmioty[index].ReturnIMG(), FileMode.Open, FileAccess.Read);
                 Obraz.Image = Image.FromStream(stream);
                 stream.Close();
-                Nazwa_Przedmiotu.Text = przedmioty[index].ReturnNazwa();
+                nazwa_TextBox.Text = przedmioty[index].ReturnNazwa();
                 
             }
         }
