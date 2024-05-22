@@ -33,12 +33,6 @@ namespace Projekt
         {
             return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|-|-|-|-|-", RodzajPrzedmiotu, img, Nazwa, Rzadkosc, Kolekcja, opis);
         }
-        public string ReturnNazwa()
-        {
-            string tekst = ToString();
-            string[] words = tekst.Split('|');
-            return words[2];
-        }
         public string ReturnIMG()
         {
             string tekst = ToString();

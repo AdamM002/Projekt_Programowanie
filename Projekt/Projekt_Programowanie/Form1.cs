@@ -22,7 +22,7 @@ namespace Projekt_Programowanie
             
         }
         Przedmiot[] przedmioty;
-
+        //odczyt z pliku i tworzenie obiektów klas
         public void Form1_Load(object sender, EventArgs e)
         {
             string[] baza;
@@ -36,21 +36,31 @@ namespace Projekt_Programowanie
                 else if (pozycje[0] == "1") przedmioty[i] = new Grafiti(Convert.ToInt32(pozycje[0]), pozycje[1], pozycje[2], pozycje[3], pozycje[4], pozycje[5], Convert.ToInt32(pozycje[9]));
                 else if (pozycje[0] == "2") przedmioty[i] = new Żetony(Convert.ToInt32(pozycje[0]), pozycje[1], pozycje[2], pozycje[3], pozycje[4], pozycje[5], pozycje[10]);
                 else if (pozycje[0] == "3") przedmioty[i] = new Naklejki(Convert.ToInt32(pozycje[0]), pozycje[1], pozycje[2], pozycje[3], pozycje[4], pozycje[5], pozycje[10]);
-                Wyszukiwarka_rozwijana.Items.Add(przedmioty[i].ReturnNazwa());
+                Wyszukiwarka_rozwijana.Items.Add(pozycje[2]);
             }
         }
 
+        //Ładowanie danych wybranego przedmiotu i wyświetlanie
         private void Wyszukaj_Click(object sender, EventArgs e)
         {
             if (Wyszukiwarka_rozwijana.Text != "")
             {
-                string tekst = Wyszukiwarka_rozwijana.Text;
                 int index = Wyszukiwarka_rozwijana.SelectedIndex;
+                string tekst = przedmioty[index].ToString();
+                string[] pozycje = tekst.Split('|');
                 string parentDirectory = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
                 FileStream stream = new FileStream(parentDirectory + przedmioty[index].ReturnIMG(), FileMode.Open, FileAccess.Read);
                 Obraz.Image = Image.FromStream(stream);
                 stream.Close();
-                nazwa_TextBox.Text = przedmioty[index].ReturnNazwa();
+                nazwa_TextBox.Text = pozycje[2];
+                kolekcja_TextBox.Text = pozycje[4];
+                rzadkość_TextBox.Text = pozycje[3];
+                bron_TextBox.Text = pozycje[6];
+                zuzycie_TextBox.Text = pozycje[7];
+                pattern_TextBox.Text = pozycje[8];
+                uzycia_TextBox.Text = pozycje[9];
+                rodzaj_TextBox.Text = pozycje[10];
+                opis_TextBox.Text = pozycje[5];
                 
             }
         }

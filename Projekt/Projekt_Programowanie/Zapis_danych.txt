@@ -3,3 +3,4 @@
 1|\\obrazy\\testowy_mundo.png|testowy_mundo|konsumenckiej jakości|testowa|to jest test|-|-|-|40|-
 2|\\obrazy\\test.png|test|egzotycznego pochodzenia|abc|ggdfs|-|-|-|-|idk
 3|\\obrazy\\zetony.png|zetony|o mistrzowskiej wprawie|haha|gdsfsddss|-|-|-|-|no
+2|\\obrazy\\kkk.png|kkk|nadzwyczajnej rzadkości|lol|opis|-|-|-|-|nie
