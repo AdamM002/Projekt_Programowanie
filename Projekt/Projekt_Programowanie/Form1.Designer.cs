@@ -188,11 +188,11 @@
             this.opis_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.opis_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opis_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.opis_TextBox.Location = new System.Drawing.Point(73, 234);
+            this.opis_TextBox.Location = new System.Drawing.Point(65, 234);
             this.opis_TextBox.Multiline = true;
             this.opis_TextBox.Name = "opis_TextBox";
             this.opis_TextBox.ReadOnly = true;
-            this.opis_TextBox.Size = new System.Drawing.Size(365, 116);
+            this.opis_TextBox.Size = new System.Drawing.Size(373, 116);
             this.opis_TextBox.TabIndex = 23;
             // 
             // rodzaj_TextBox
@@ -201,10 +201,10 @@
             this.rodzaj_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rodzaj_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rodzaj_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.rodzaj_TextBox.Location = new System.Drawing.Point(93, 203);
+            this.rodzaj_TextBox.Location = new System.Drawing.Point(84, 202);
             this.rodzaj_TextBox.Name = "rodzaj_TextBox";
             this.rodzaj_TextBox.ReadOnly = true;
-            this.rodzaj_TextBox.Size = new System.Drawing.Size(345, 19);
+            this.rodzaj_TextBox.Size = new System.Drawing.Size(354, 19);
             this.rodzaj_TextBox.TabIndex = 22;
             // 
             // uzycia_TextBox
@@ -213,10 +213,10 @@
             this.uzycia_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.uzycia_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uzycia_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.uzycia_TextBox.Location = new System.Drawing.Point(133, 171);
+            this.uzycia_TextBox.Location = new System.Drawing.Point(124, 170);
             this.uzycia_TextBox.Name = "uzycia_TextBox";
             this.uzycia_TextBox.ReadOnly = true;
-            this.uzycia_TextBox.Size = new System.Drawing.Size(305, 19);
+            this.uzycia_TextBox.Size = new System.Drawing.Size(314, 19);
             this.uzycia_TextBox.TabIndex = 21;
             // 
             // pattern_TextBox
@@ -225,10 +225,10 @@
             this.pattern_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pattern_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pattern_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.pattern_TextBox.Location = new System.Drawing.Point(96, 139);
+            this.pattern_TextBox.Location = new System.Drawing.Point(89, 138);
             this.pattern_TextBox.Name = "pattern_TextBox";
             this.pattern_TextBox.ReadOnly = true;
-            this.pattern_TextBox.Size = new System.Drawing.Size(342, 19);
+            this.pattern_TextBox.Size = new System.Drawing.Size(349, 19);
             this.pattern_TextBox.TabIndex = 20;
             // 
             // zuzycie_TextBox
@@ -237,10 +237,10 @@
             this.zuzycie_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.zuzycie_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zuzycie_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.zuzycie_TextBox.Location = new System.Drawing.Point(98, 107);
+            this.zuzycie_TextBox.Location = new System.Drawing.Point(89, 106);
             this.zuzycie_TextBox.Name = "zuzycie_TextBox";
             this.zuzycie_TextBox.ReadOnly = true;
-            this.zuzycie_TextBox.Size = new System.Drawing.Size(340, 19);
+            this.zuzycie_TextBox.Size = new System.Drawing.Size(349, 19);
             this.zuzycie_TextBox.TabIndex = 19;
             // 
             // bron_TextBox
@@ -249,10 +249,10 @@
             this.bron_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bron_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bron_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.bron_TextBox.Location = new System.Drawing.Point(75, 75);
+            this.bron_TextBox.Location = new System.Drawing.Point(67, 74);
             this.bron_TextBox.Name = "bron_TextBox";
             this.bron_TextBox.ReadOnly = true;
-            this.bron_TextBox.Size = new System.Drawing.Size(363, 19);
+            this.bron_TextBox.Size = new System.Drawing.Size(371, 19);
             this.bron_TextBox.TabIndex = 18;
             // 
             // rzadkość_TextBox
@@ -261,10 +261,10 @@
             this.rzadkość_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rzadkość_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rzadkość_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.rzadkość_TextBox.Location = new System.Drawing.Point(116, 42);
+            this.rzadkość_TextBox.Location = new System.Drawing.Point(108, 42);
             this.rzadkość_TextBox.Name = "rzadkość_TextBox";
             this.rzadkość_TextBox.ReadOnly = true;
-            this.rzadkość_TextBox.Size = new System.Drawing.Size(322, 19);
+            this.rzadkość_TextBox.Size = new System.Drawing.Size(330, 19);
             this.rzadkość_TextBox.TabIndex = 17;
             // 
             // kolekcja_TextBox
@@ -273,11 +273,11 @@
             this.kolekcja_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.kolekcja_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kolekcja_TextBox.ForeColor = System.Drawing.Color.Silver;
-            this.kolekcja_TextBox.Location = new System.Drawing.Point(104, 11);
+            this.kolekcja_TextBox.Location = new System.Drawing.Point(98, 10);
             this.kolekcja_TextBox.Name = "kolekcja_TextBox";
             this.kolekcja_TextBox.ReadOnly = true;
             this.kolekcja_TextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.kolekcja_TextBox.Size = new System.Drawing.Size(334, 19);
+            this.kolekcja_TextBox.Size = new System.Drawing.Size(340, 19);
             this.kolekcja_TextBox.TabIndex = 16;
             // 
             // label9
