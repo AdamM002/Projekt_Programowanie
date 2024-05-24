@@ -125,7 +125,6 @@
             this.Obraz.BackColor = System.Drawing.SystemColors.Control;
             this.Obraz.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Obraz.ErrorImage = global::Projekt_Programowanie.Properties.Resources.zadanie;
-            this.Obraz.Image = global::Projekt_Programowanie.Properties.Resources.zadanie;
             this.Obraz.InitialImage = global::Projekt_Programowanie.Properties.Resources.moneyman;
             this.Obraz.Location = new System.Drawing.Point(20, 18);
             this.Obraz.Name = "Obraz";
