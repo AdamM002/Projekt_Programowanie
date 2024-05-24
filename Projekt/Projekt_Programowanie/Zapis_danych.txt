@@ -1,6 +1,12 @@
-0|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|Cz|500|500|-|-
-0|\\obrazy\\CZ75-Auto_Szkarlatna_siec.png|Szkarlatna_siec|rare|nie_wiem|brak|Cz|500|500|-|-
-1|\\obrazy\\testowy_mundo.png|testowy_mundo|konsumenckiej jakości|testowa|to jest test|-|-|-|40|-
-2|\\obrazy\\test.png|test|egzotycznego pochodzenia|abc|ggdfs|-|-|-|-|idk
-3|\\obrazy\\zetony.png|zetony|o mistrzowskiej wprawie|haha|gdsfsddss|-|-|-|-|no
-2|\\obrazy\\kkk.png|kkk|nadzwyczajnej rzadkości|lol|opis|-|-|-|-|nie
+0|\\obrazy\\AWP_ASIIMOV.png|Asiimov|Tajny|Phoenix|Przyszłość przewidywać może każdy... wizjoner ją kształtuje|AWP|Po testach bojowych|994|-|-
+0|\\obrazy\\Karambit_Tajga.png|Tajga|Tajny|-|Lasy bywają niebezpieczne... nie przemierzaj ich w samotności|Karambit|Prosto z fabryki|863|-|-
+0|\\obrazy\\Five-SeveN_MAŁPI_BIZNES.png|Małpi biznes|Poufny|Chromatyczności 2|Czasami można się pobawić jedzeniem|Five-SeveN|Po ciężkich walkach|559|-|-
+1|\\obrazy\\Graffiti_RYCZĄCY_ŚWIT.png|Ryczący świt|Poufny|Skrzynia z graffiti|-|-|-|-|50|-
+1|\\obrazy\\Graffiti_TAMARA.png|Tamara|Zakazany|Skrzynia z grafiiti społeczności 1|-|-|-|-|50|-
+1|\\obrazy\\Graffiti_NATUS_VINCERE.png|Natus Vincere|Wojskowej jakości|-|-|-|-|-|50|-
+2|\\obrazy\\Żeton_5_LAT.png|Żeton 5-letniego weterana|Tajny|-|Członek społeczności Counter-Strike od ponad 5 lat|-|-|-|-|Żeton za służbę
+2|\\obrazy\\Żeton_SHATTERED_WEB.png|Diamentowy żeton Shattered Web|Tajny|Operacja Shattered Web|Ukończenie 100 misji|-|-|-|-|Żeton za operacje
+2|\\obrazy\\Żeton_BLOODHOUND.png|Złoty żeton Bloodhound|Tajny|Operacja Bloodhound|Zdobycie 14 gwiazdek|-|-|-|-|Żeton za operacje
+3|\\obrazy\\Naklejka_MIR.png|mir|Wojskowej jakości|Kopenhaga 2024|Autograf gracza Nikołaj Bitniukow|-|-|-|-|Pamiątka
+3|\\obrazy\\Naklejka_TEAM_LDLC.png|Team LDLC.com|Wojskowej jakości|Katowice 2014|Logo drużyny LDLC|-|-|-|-|Pamiątka
+3|\\obrazy\\Naklejka_VOX_EMINOR.png|Vox Eminor|Zakazany|Katowice 2015|Logo drużyny Vox Eminor|-|-|-|-|Hologramowana
