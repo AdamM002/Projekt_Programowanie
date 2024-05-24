@@ -1,5 +1,5 @@
-0|\\obrazy\\AWP_ASIIMOV.png|Asiimov|Tajny|Phoenix|Przyszłość przewidywać może każdy... wizjoner ją kształtuje|AWP|Po testach bojowych|994|-|-
-0|\\obrazy\\Karambit_Tajga.png|Tajga|Tajny|-|Lasy bywają niebezpieczne... nie przemierzaj ich w samotności|Karambit|Prosto z fabryki|863|-|-
+0|\\obrazy\\AWP_ASIMOV.png|Asiimov|Tajny|Phoenix|Przyszłość przewidywać może każdy... wizjoner ją kształtuje|AWP|Po testach bojowych|994|-|-
+0|\\obrazy\\Karabmit_TAJGA.png|Tajga|Tajny|-|Lasy bywają niebezpieczne... nie przemierzaj ich w samotności|Karambit|Prosto z fabryki|863|-|-
 0|\\obrazy\\Five-SeveN_MAŁPI_BIZNES.png|Małpi biznes|Poufny|Chromatyczności 2|Czasami można się pobawić jedzeniem|Five-SeveN|Po ciężkich walkach|559|-|-
 1|\\obrazy\\Graffiti_RYCZĄCY_ŚWIT.png|Ryczący świt|Poufny|Skrzynia z graffiti|-|-|-|-|50|-
 1|\\obrazy\\Graffiti_TAMARA.png|Tamara|Zakazany|Skrzynia z grafiiti społeczności 1|-|-|-|-|50|-
